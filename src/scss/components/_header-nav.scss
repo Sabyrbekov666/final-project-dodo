@@ -1,0 +1,27 @@
+div {
+	ul {
+		margin-right: 50px;
+		display: flex;
+		gap: 65px;
+		align-items: center;
+		li {
+			font-size: 35px;
+			font-weight: 500;
+			button {
+				border-radius: 10px;
+				padding: 15px;
+			}
+			.stateButton {
+				@apply text-[#2c3a61];
+			}
+			.activeButton {
+				@apply shadow-xl text-white bg-[#2c3a61] hover:text-[#2c3a61];
+			}
+			:hover {
+				border-bottom: #efeeed;
+				background-color: white;
+				color: #2c3a61;
+			}
+		}
+	}
+}

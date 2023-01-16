@@ -1,0 +1,30 @@
+.container {
+	.often-order {
+		h1 {
+			color: rgb(39, 39, 39);
+			font-size: 35px;
+		}
+	}
+	.catalog {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		h1 {
+			font-size: 35px;
+			margin-top: 30px;
+		}
+
+		.catalogs {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	.title__and__sort {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+}

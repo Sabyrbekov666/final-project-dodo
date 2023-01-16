@@ -1,0 +1,34 @@
+@import '../variables';
+
+.nav {
+	.nav__container {
+		// display: flex;
+		position: relative;
+		z-index: 1;
+
+		.nav__item {
+			padding-left: 20px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: background-color 0.1s ease-in-out;
+
+			&:hover {
+				color: rgb(255, 69, 0);
+			}
+
+			&:active {
+				color: rgb(255, 69, 0);
+			}
+
+			&.active {
+				color: rgb(255, 69, 0);
+			}
+		}
+	}
+	.nav__container.fixed {
+		background-color: rgb(172, 172, 172);
+		position: fixed;
+		top: 6%;
+		margin-top: 3rem;
+	}
+}

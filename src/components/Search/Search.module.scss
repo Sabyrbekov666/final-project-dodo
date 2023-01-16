@@ -1,0 +1,33 @@
+.root {
+	left: -120px;
+}
+
+.input {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 12px 20px;
+	padding-left: 42px;
+	width: 380px;
+	border-radius: 18px;
+	font-size: 16px;
+
+	&:focus {
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	background: url(https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png)
+		no-repeat scroll 7px 7px;
+	padding-left: 30px;
+}
+
+.clearIcon {
+	width: 18px;
+	height: 18px;
+	opacity: 0.3;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,117 @@
+@import '../variables';
+
+.header {
+	padding: 20px 0px 20px 0px;
+	background-color: rgb(255, 255, 255);
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		justify-content: space-between;
+		.nav {
+			display: flex;
+			gap: 20px;
+			.nav__item {
+				font-size: 17px;
+			}
+		}
+
+		@media (max-width: 645px) {
+			flex-direction: column;
+
+			.header__cart {
+				margin-top: 20px;
+			}
+		}
+		.about__delivery {
+			h3 {
+				font-size: 16px;
+			}
+			.delivery__rating {
+				display: flex;
+				align-items: center;
+				.tooltip {
+					position: relative;
+					display: inline-block;
+				}
+
+				.tooltip .tooltiptext {
+					visibility: hidden;
+					width: 400px;
+					height: 100px;
+					background-color: rgb(73, 73, 73);
+					color: #fff;
+					text-align: center;
+					padding: 5px 0;
+					border-radius: 10px;
+					padding-top: 20px;
+
+					position: absolute;
+					z-index: 1;
+					top: 200%;
+					left: 50%;
+					margin-left: -190px;
+
+					opacity: 0;
+					transition: opacity 0.3s;
+				}
+
+				/* Подсказка стрелка */
+				.tooltip .tooltiptext::after {
+					content: '';
+					position: absolute;
+					bottom: 100%;
+					left: 50%;
+					margin-right: 8px;
+					border-width: 8px;
+					border-style: solid;
+					border-color: #555 transparent transparent;
+				}
+
+				/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+				.tooltip:hover .tooltiptext {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+		.header__contacts {
+			.mobile__number {
+				color: rgb(155, 155, 155);
+				font-weight: 600;
+			}
+		}
+		.dodo__coins {
+			.dodo__coin {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: background-color 0.1s ease-in-out;
+
+				p {
+					b {
+						&:hover {
+							color: rgb(255, 69, 0);
+						}
+
+						&:active {
+							color: rgb(255, 69, 0);
+						}
+
+						&.active {
+							color: rgb(255, 69, 0);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__logo {
+		display: flex;
+		.header__logo {
+			width: 200px;
+			height: 50px;
+		}
+	}
+}

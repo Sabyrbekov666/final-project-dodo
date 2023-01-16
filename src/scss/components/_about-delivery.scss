@@ -1,0 +1,73 @@
+.about__delivery {
+	h2 {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.delivery {
+		display: flex;
+		justify-content: space-between;
+		.free__pizza {
+			width: 400px;
+			.orange__title {
+				color: rgb(255, 115, 0);
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 10px;
+			}
+			p {
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+		.max__min__time {
+			width: 400px;
+			.min__time {
+				.orange__title {
+					color: rgb(255, 115, 0);
+					font-size: 18px;
+					font-weight: 600;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+					margin-bottom: 15px;
+				}
+			}
+			.max__time {
+				.orange__title {
+					color: rgb(255, 115, 0);
+					font-size: 18px;
+					font-weight: 600;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		.delivery__area {
+			.orange__title {
+				color: rgb(255, 115, 0);
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+			p {
+				font-size: 18px;
+				font-weight: 500;
+				width: 200px;
+			}
+			img {
+				width: 230px;
+				height: 250px;
+				border-radius: 16px;
+			}
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+	}
+}

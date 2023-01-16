@@ -1,0 +1,65 @@
+.about-us__content {
+	.about__us {
+		margin: 0px 60px 0px 60px;
+		padding: 30px 0px 50px 0px;
+
+		.about {
+			h1 {
+				font-weight: 500;
+			}
+			display: flex;
+			.description__about {
+				p {
+					font-size: 20px;
+					font-weight: 500;
+					margin: 45px 0px 45px 0px;
+					background-color: rgb(253, 242, 232);
+					padding: 24px;
+					border-radius: 10px;
+				}
+			}
+		}
+		img {
+			border-radius: 20px;
+			margin-left: 30px;
+		}
+	}
+	.why__dodo {
+		margin: 0px 60px 0px 60px;
+		padding: 0px 0px 50px 0px;
+		.why-dodo__images {
+			display: flex;
+			justify-content: center;
+			img {
+				margin: 30px 30px 0px 30px;
+				border-radius: 17px;
+			}
+		}
+		.why-dodo__description {
+			p {
+				font-size: 21px;
+				font-weight: 500;
+				margin: 45px 0px 65px 0px;
+				background-color: rgb(26, 26, 26);
+				padding: 44px;
+				border-radius: 10px;
+				color: #fff;
+				display: flex;
+				align-items: center;
+			}
+		}
+		.halal-mode {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				margin-right: 8px;
+			}
+			.halal-mode__description {
+				.p-gray {
+					color: gray;
+				}
+			}
+		}
+	}
+}
